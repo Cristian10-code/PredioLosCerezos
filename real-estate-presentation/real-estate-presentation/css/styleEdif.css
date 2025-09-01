@@ -1,0 +1,283 @@
+/* Estilos para tabla de datos */
+.table-container {
+    margin: 20px 0;
+    width: 100%;
+    overflow-x: auto;
+    margin-left: auto; /* Esta es la clave para mover a la derecha */
+    margin-right: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.data-table thead {
+    background-color: var(--aecom-midnight-teal);
+    color: white;
+}
+
+.data-table th {
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.data-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+}
+
+.data-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.data-table .section-header {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.data-table .section-header td {
+    border-top: 1px solid #ddd;
+}
+
+.data-table .sub-item td:first-child {
+    padding-left: 40px;
+    position: relative;
+}
+
+.data-table .sub-item td:first-child::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--aecom-lime-green);
+}
+
+/* Aplicar bordes redondeados a la primera y última fila */
+.data-table tr:first-child th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.data-table tr:first-child th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.data-table tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.data-table tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+/* Estilos para la sección de edificabilidad */
+.edificabilidad-slide {
+    display: block !important; /* Sobrescribe el grid */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80%;
+}
+
+.overlay-translucent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.flex-content-row {
+    position: relative;
+    z-index: 2;
+    display: flex !important; /* Forzar flexbox */
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.left-column {
+    flex: 0 0 20%;
+    padding: 20px 0 0 20px;
+    margin-bottom: -30px; /* Para acercar al background */
+}
+
+.right-column {
+    flex: 0 0 40%;
+    display: flex;
+    padding: 20px;
+    justify-content: flex-end; /* Alinear a la derecha */
+}
+
+.edificabilidad-table {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+}
+
+/* Estilo para el título en la parte superior */
+.top-title {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    z-index: 3;
+    padding: 20px;
+}
+
+.top-title h2 {
+    color: var(--aecom-midnight-teal);
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+.top-title h3 {
+    color: var(--aecom-earth-green);
+    font-size: 24px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+}
+
+/* Estilos para la sección de mercado */
+.mercado-slide {
+    display: block !important; /* Sobrescribe el grid */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80%;
+}
+
+/* Marcadores de ubicación */
+.location-markers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.marker {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--aecom-lime-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform-origin: bottom center;
+    animation: markerBounce 2s infinite alternate;
+}
+
+.marker i {
+    color: var(--aecom-midnight-teal);
+    font-size: 20px;
+}
+
+.marker:hover {
+    transform: scale(1.2);
+    background-color: var(--aecom-midnight-teal);
+}
+
+.marker:hover i {
+    color: var(--aecom-lime-green);
+}
+
+/* Paneles de información de proyectos */
+.project-panels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    pointer-events: none;
+}
+
+.project-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    display: none;
+    pointer-events: auto;
+    overflow: hidden;
+    animation: fadeInScale 0.3s ease;
+}
+
+.panel-header {
+    background-color: var(--aecom-midnight-teal);
+    padding: 12px 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-header h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.close-panel {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 20px;
+}
+
+.panel-content {
+    padding: 15px;
+}
+
+.panel-content p {
+    margin: 8px 0;
+}
+
+/* Animaciones */
+@keyframes markerBounce {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-5px) scale(1.05);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.show-panel {
+    display: block;
+}

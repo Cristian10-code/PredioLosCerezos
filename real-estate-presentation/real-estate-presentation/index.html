@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis de Propiedad Inmobiliaria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleEdif.css">
+    <link rel="stylesheet" href="css/styleMercado.css">
+    <link rel="stylesheet" href="css/prefactibilidad.css">
+</head>
+<body>
+    <div class="intro-screen" id="introScreen">
+        <img src="Logos/logo-inmobiliaria.png" alt="Logo Inmobiliaria" class="aecom-logo">
+        <div class="intro-content">
+            <div class="intro-logos">
+                <img src="Logos/analisis-lote.png" alt="Análisis de Lote" class="ec-logo">
+            </div>
+            <button class="intro-button" onclick="startPresentation()">
+                <span>Iniciar Presentación</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Main content (hidden initially) -->
+    <div class="main-content" id="mainContent" style="display: none;">
+        <!-- Home button -->
+        <button class="home-button" onclick="goToIntro()" title="Volver al Inicio">
+            <i class="fas fa-home"></i>
+        </button>
+
+        <!-- Sidebar with timeline -->
+        <div class="timeline-sidebar">
+            <div class="timeline-header">
+                <img src="Logos/analisis-lote-small.png" alt="Análisis de Lote" class="ec-plus-logo">
+                <p>Estudio de Factibilidad Inmobiliaria</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Generalidades del predio -->
+                <div class="timeline-item active" data-slide="generalidades">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">01</div>
+                        <div class="timeline-title">Generalidades del predio</div>
+                        <div class="timeline-subtitle">Características principales</div>
+                    </div>
+                </div>
+                <!-- Normativa -->
+                <div class="timeline-item" data-slide="normativa">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">02</div>
+                        <div class="timeline-title">Normativa</div>
+                        <div class="timeline-subtitle">Regulación urbana aplicable</div>
+                    </div>
+                </div>
+                <!-- Edificabilidad -->
+                <div class="timeline-item" data-slide="edificabilidad">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">03</div>
+                        <div class="timeline-title">Edificabilidad</div>
+                        <div class="timeline-subtitle">Potencial constructivo</div>
+                    </div>
+                </div>
+                
+                <!-- Mercado -->
+                <div class="timeline-item" data-slide="mercado">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">04</div>
+                        <div class="timeline-title">Mercado</div>
+                        <div class="timeline-subtitle">Análisis de oferta y demanda</div>
+                    </div>
+                </div>
+                <!-- Prefactibilidad -->
+                <div class="timeline-item" data-slide="prefactibilidad">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">05</div>
+                        <div class="timeline-title">Prefactibilidad</div>
+                        <div class="timeline-subtitle">Viabilidad económica</div>
+                    </div>
+                </div>
+
+                <!-- Conclusiones -->
+                <div class="timeline-item" data-slide="conclusiones">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">Conclusiones</div>
+                        <div class="timeline-subtitle">Recomendaciones finales</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dynamic content area -->
+        <div class="preview-area">
+            <div class="slide-content" id="slideContent">
+                <!-- Content will be loaded dynamically here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/market-panels.js"></script>
+    <script src="js/scenario-switcher.js"></script>
+</body>
+</html>

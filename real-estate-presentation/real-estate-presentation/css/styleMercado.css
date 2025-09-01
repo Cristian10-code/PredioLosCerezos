@@ -1,0 +1,132 @@
+/* Estilos para la sección de mercado - with increased specificity */
+.slide-layout.mercado-slide {
+    display: block !important;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative !important;
+    height: 80% !important;
+    background-color: #f0f0f0; /* Fallback color to check if style is applied */
+}
+
+/* Marcadores de ubicación */
+.location-markers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+.marker {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: var(--aecom-lime-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform-origin: bottom center;
+    animation: markerBounce 2s infinite alternate;
+}
+
+.marker i {
+    color: var(--aecom-midnight-teal);
+    font-size: 20px;
+}
+
+.marker:hover {
+    transform: scale(1.2);
+    background-color: var(--aecom-midnight-teal);
+}
+
+.marker:hover i {
+    color: var(--aecom-lime-green);
+}
+
+/* Paneles de información de proyectos */
+.project-panels {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    pointer-events: none;
+}
+
+.project-panel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    display: none;
+    pointer-events: auto;
+    overflow: hidden;
+    animation: fadeInScale 0.3s ease;
+}
+
+.panel-header {
+    background-color: var(--aecom-midnight-teal);
+    padding: 12px 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel-header h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.close-panel {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 20px;
+}
+
+.panel-content {
+    padding: 15px;
+}
+
+.panel-content p {
+    margin: 8px 0;
+}
+
+/* Animaciones */
+@keyframes markerBounce {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(-5px) scale(1.05);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.show-panel {
+    display: block;
+}

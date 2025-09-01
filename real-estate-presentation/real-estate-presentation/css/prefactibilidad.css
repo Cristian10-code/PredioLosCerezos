@@ -1,0 +1,166 @@
+/* Prefactibilidad section styles */
+.scenario-btn {
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+    /* Color base para todos los botones */
+  background-color: #0a9396;
+  color: white;
+  opacity: 0.8;
+}
+
+.scenario-btn:hover {
+  transform: scale(1.05);
+}
+
+.scenario-btn.active {
+  opacity: 1;
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  border: 3px solid #fff;
+}
+
+.scenario-btn.inactive {
+  opacity: 0.8;
+  transform: scale(1);
+}
+
+/* Añadimos colores para los escenarios */
+#btn-scenario1 {
+  background-color: #005f73;
+  color: white;
+}
+
+#btn-scenario2 {
+  background-color: #005f73;
+  color: white;
+}
+
+#btn-scenario3 {
+  background-color: #005f73;
+  color: white;
+}
+
+/* Estilos para mostrar/ocultar escenarios */
+.scenario-data {
+  display: none; /* Ocultar todos por defecto */
+}
+
+#scenario1-data {
+  display: block; /* Mostrar solo el primer escenario */
+}
+
+/* Estilo activo para el primer botón por defecto */
+#btn-scenario1 {
+  background-color: #005f73;
+  color: white;
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+#btn-scenario2, #btn-scenario3 {
+  opacity: 0.8;
+}
+
+/* Estilos para el layout de la sección */
+.prefactibilidad-content {
+  width: 100%;
+}
+
+.content-section.prefactibilidad-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prefactibilidad-container {
+  display: flex;
+  justify-content: center;
+  top: 5px;
+  width: 100%;
+  align-items: center; /* Cambiar de flex-start a center */
+  margin-top: 30px; /* Espacio después del título */
+}
+
+.prefactibilidad-sidebar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prefactibilidad-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 0; /* Eliminar el padding-top */
+}
+
+.prefactibilidad-results {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 0; /* Eliminar el padding-top */
+}
+
+.prefactibilidad-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+.prefactibilidad-table th, 
+.prefactibilidad-table td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+}
+
+.prefactibilidad-table th {
+  background-color: #f0f0f0;
+  text-align: left;
+}
+
+.prefactibilidad-table td {
+  text-align: left;
+}
+
+.prefactibilidad-table td.column-total {
+  font-weight: bold;
+}
+
+.prefactibilidad-table td.column-value {
+  text-align: right;
+}
+
+.prefactibilidad-table td.column-percent {
+  text-align: right;
+}
+
+.prefactibilidad-table tr.result-row {
+  background-color: #fff2e6;
+}
+
+.prefactibilidad-table td.result-cell {
+  font-weight: bold;
+}
+
+/* Centrado de contenido */
+.slide-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Ajustes adicionales para centrado */

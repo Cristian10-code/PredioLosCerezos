@@ -1,0 +1,65 @@
+/* Ajustes para tarjetas de normativa con dimensiones uniformes */
+.regulation-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.regulation-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 180px; /* Altura fija para todas las tarjetas */
+    display: flex;
+    flex-direction: column;
+}
+
+.regulation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.regulation-card h4 {
+    color: var(--aecom-midnight-teal);
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 18px;
+    height: 50px; /* Altura fija para todos los títulos */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el texto */
+    position: relative;
+    padding-bottom: 8px;
+}
+
+/* Crear una línea verde usando pseudo-elemento para mejor control */
+.regulation-card h4:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--aecom-lime-green);
+}
+
+.regulation-card p {
+    margin: 5px 0; 
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.regulation-card .small-text {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Manejo de desbordamiento para tarjetas con mucho contenido */
+.regulation-card .card-content {
+    overflow-y: auto;
+    flex-grow: 1;
+}

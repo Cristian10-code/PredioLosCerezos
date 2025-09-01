@@ -1,0 +1,33 @@
+body.edificabilidad {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.edificabilidad-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.edificabilidad-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.edificabilidad-content {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.edificabilidad-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.edificabilidad-footer {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #777;
+}
