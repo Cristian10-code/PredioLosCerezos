@@ -580,10 +580,10 @@ const slideContents = {
                     </ul>
                 </div>
                 
-                <div class="contact-info">
-                    <p><strong>LAM Consultoría Inmobiliaria</strong></p>
-                    <p>lmilenaarq@gmail.com | Tel: (57) 313 3918422</p>
-                </div>
+                // <div class="contact-info">
+                //     <p><strong>LAM Consultoría Inmobiliaria</strong></p>
+                //     <p>lmilenaarq@gmail.com | Tel: (57) 313 3918422</p>
+                // </div>
                 
                 <div class="disclaimer"> 
                     <p><em>La información técnica, financiera y comercial presentada ha sido preparada por LAM, su grupo de 
