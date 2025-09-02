@@ -22,7 +22,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    background-color: var(--aecom-lime-green);
+    background-color: var(--aecom-lime-green); /* Actualizado a #A5DD43 */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -35,17 +35,17 @@
 }
 
 .marker i {
-    color: var(--aecom-midnight-teal);
+    color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
     font-size: 20px;
 }
 
 .marker:hover {
     transform: scale(1.2);
-    background-color: var(--aecom-midnight-teal);
+    background-color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
 }
 
 .marker:hover i {
-    color: var(--aecom-lime-green);
+    color: var(--aecom-lime-green); /* Actualizado a #A5DD43 */
 }
 
 /* Paneles de información de proyectos */
@@ -75,7 +75,7 @@
 }
 
 .panel-header {
-    background-color: var(--aecom-midnight-teal);
+    background-color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
     padding: 12px 15px;
     color: white;
     display: flex;
@@ -86,6 +86,7 @@
 .panel-header h4 {
     margin: 0;
     font-size: 18px;
+    color: var(--aecom-white); /* Actualizado a #EFEFEF */
 }
 
 .close-panel {

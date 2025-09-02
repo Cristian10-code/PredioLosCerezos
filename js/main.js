@@ -36,12 +36,21 @@ const slideContents = {
                         </li>
                         <li>
                             <div class="feature-icon">
-                                <img src="assets/Condiciones.png" alt="Icono de negociación">
+                                <img src="assets/Estrategia.png" alt="Icono de negociación">
                             </div>
                             <div class="feature-text">
-                                <strong>Condiciones de Negociación:</strong> Predio en Aporte, se escuchan ofertas y
-                                modelos de negocio, el propietario esta dispuesto a participar en el proyecto,
-                                con un pago inicial minimo del 5%, para gastos de comision
+                                <strong>Ubicación Estratégica:</strong> 1 Km antes del peaje, a 10 minutos 
+                                de Cartagena y a 1.5 Km de la playa.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon">
+                                <img src="assets/Lago.png" alt="Icono de negociación">
+                            </div>
+                            <div class="feature-text">
+                                <strong>Lago Natural:</strong> El predio cuenta con la formación natural
+                                de un lago, elemento que constituye un valioso atractivo paisajístico 
+                                para el futuro desarrollo del proyecto.
                             </div>
                         </li>
                     </ul>
@@ -123,15 +132,8 @@ const slideContents = {
                     </div>
                 </div>
                 <div class="map-container">
-                    <div class="map-image-container">
-                        <img src="assets/predio-satellite.png" alt="Vista satelital del predio" class="satellite-image">
-                        <div class="map-overlay">
-                            <a href="https://earth.google.com/web/@10.54376645,-75.4968952,-2.84903346a,38338.41643377d,35y,0h,0t,0r/data=CgRCAggBMikKJwolCiExQTZISG9aTWpvZ091U0dNVENUQVQtYVBQQzJLVlBqQk0gAToDCgEwQgIIAEoICNK0z_sDEAE?authuser=0" 
-                            target="_blank" 
-                            class="view-in-earth-btn">
-                                <i class="fas fa-globe"></i> Ver en Google Earth
-                            </a>
-                        </div>
+                    <div class="norma-container">
+                        <img src="assets/Norma.jpg" alt="Vista normativa del predio" class="norma-image">                        
                     </div>
                 </div> 
             </div>
@@ -559,26 +561,49 @@ const slideContents = {
     `
 },
     'conclusiones': {
-        html: `
-            <div class="slide-layout full-width">
-                <div class="content-section closing-content">
-                    <h2>Conclusiones y Recomendaciones</h2>
-                    <p>El análisis del predio muestra un alto potencial para desarrollo inmobiliario.</p>
-                    <ul class="feature-list" style="max-width: 800px; margin: 30px auto;">
-                        <li>El terreno cuenta con excelente ubicación y buena conectividad</li>
-                        <li>La normativa permite un desarrollo de densidad media-alta</li>
-                        <li>El estudio de mercado indica demanda sostenida para vivienda en el segmento medio-alto</li>
-                        <li>Los indicadores financieros preliminares muestran viabilidad económica</li>
-                        <li>Se recomienda proceder con un estudio detallado y anteproyecto arquitectónico</li>
+    html: `
+        <link rel="stylesheet" href="css/styleConclusiones.css">
+        <div class="slide-layout full-width">
+            <div class="conclusion-content">
+                <h2>Condiciones de Negociación</h2>
+                
+                <div class="negotiation-terms">
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Modelo de negocio:</strong> Predio en Aporte, se escuchan ofertas y modelos de negocio. 
+                            El propietario está dispuesto a participar en el proyecto, con un pago inicial mínimo del 5% 
+                            para gastos de comisión.
+                        </li>
+                        <li>
+                            <strong>Valor mínimo garantizado:</strong> $223.690/m²
+                        </li>
                     </ul>
-                    <div class="contact-info">
-                        <p><strong>Consultoría Inmobiliaria</strong></p>
-                        <p>contacto@consultoria.com | Tel: (55) 1234-5678</p>
-                    </div>                    
+                </div>
+                
+                <div class="contact-info">
+                    <p><strong>LAM Consultoría Inmobiliaria</strong></p>
+                    <p>lmilenaarq@gmail.com | Tel: (57) 313 3918422</p>
+                </div>
+                
+                <div class="disclaimer"> 
+                    <p><em>La información técnica, financiera y comercial presentada ha sido preparada por LAM, su grupo de 
+                    expertos y aliados. Los comentarios, información y proyecciones contenidas, corresponden a la fecha de 
+                    divulgación y se encuentran sujetos a cambios sin previo aviso, pues atienden al comportamiento de la economía, 
+                    los insumos de construcción, las variables macroeconómicas y el entorno en general. Los datos expuestos en el 
+                    documento provienen de fuentes y proveedores consideradas confiables, sin embargo LAM, su grupo de expertos y 
+                    aliados no se hacen responsables de su veracidad ni de la interpretación que de los mismos se haga. Este documento 
+                    no es ni pretende brindar asesoría de inversión; la información, herramientas y material contenido en el texto, son 
+                    proporcionados meramente con fines informativos y no deben ser utilizados ni entendidos como una oferta, consejo, 
+                    asesoría o recomendación de inversión ni para comprar, vender o emitir valores y/o cualquier otro instrumento 
+                    financiero, ni para realizar cualquier otro tipo de transacción comercial. El contenido de la presente comunicación 
+                    o mensaje no constituye una recomendación profesional para realizar inversiones en los términos del artículo 2.40.1.1.2 
+                    del Decreto 2555 de 2010 o las normas que lo modifiquen, sustituyan o complementen. De igual manera las imágenes utilizadas 
+                    han sido tomadas de la web, pertenecen a sus autores originales y no a LAM, su grupo de expertos y aliados.</em></p>
                 </div>
             </div>
-        `
-    }
+        </div>
+    `
+}
 };
 
 // Function to start presentation

@@ -1,0 +1,67 @@
+.conclusion-content {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.conclusion-content h2 {
+    color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.summary-intro {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.negotiation-terms {
+    background-color: rgba(240, 240, 240, 0.5);
+    border-radius: 8px;
+    padding: 15px 25px;
+    margin: 20px 0;
+}
+
+.negotiation-terms li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.negotiation-terms li strong {
+    color: var(--aecom-earth-green); /* Actualizado a #699E1E */
+}
+
+.contact-info {
+    margin: 30px 0;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.disclaimer {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 11px;
+    color: #666;
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px dashed #ddd;
+    padding-top: 15px;
+}
+
+.disclaimer p {
+    line-height: 1.5;
+}

@@ -18,8 +18,8 @@
 }
 
 .data-table thead {
-    background-color: var(--aecom-midnight-teal);
-    color: white;
+    background-color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
+    color: var(--aecom-white); /* Actualizado a #EFEFEF */
 }
 
 .data-table th {
@@ -61,7 +61,7 @@
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: var(--aecom-lime-green);
+    background-color: var(--aecom-lime-green); /* Actualizado a #A5DD43 */
 }
 
 /* Aplicar bordes redondeados a la primera y última fila */
@@ -138,14 +138,14 @@
 }
 
 .top-title h2 {
-    color: var(--aecom-midnight-teal);
+    color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
     font-size: 40px;
     margin-bottom: 5px;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
 }
 
 .top-title h3 {
-    color: var(--aecom-earth-green);
+    color: var(--aecom-earth-green); /* Actualizado a #699E1E */
     font-size: 24px;
     text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
 }
@@ -173,7 +173,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    background-color: var(--aecom-lime-green);
+    background-color: var(--aecom-lime-green); /* Actualizado a #A5DD43 */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -192,7 +192,7 @@
 
 .marker:hover {
     transform: scale(1.2);
-    background-color: var(--aecom-midnight-teal);
+    background-color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
 }
 
 .marker:hover i {
@@ -226,7 +226,7 @@
 }
 
 .panel-header {
-    background-color: var(--aecom-midnight-teal);
+    background-color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
     padding: 12px 15px;
     color: white;
     display: flex;

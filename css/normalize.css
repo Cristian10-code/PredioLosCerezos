@@ -23,11 +23,11 @@
 }
 
 .regulation-card h4 {
-    color: var(--aecom-midnight-teal);
+    color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
     margin-top: 0;
     margin-bottom: 12px;
     font-size: 18px;
-    height: 50px; /* Altura fija para todos los títulos */
+    height: 45px; /* Altura fija para todos los títulos */
     display: flex;
     align-items: center; /* Centrar verticalmente el texto */
     position: relative;
@@ -42,7 +42,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--aecom-lime-green);
+    background-color: var(--aecom-lime-green); /* Actualizado a #A5DD43 */
 }
 
 .regulation-card p {
@@ -62,4 +62,70 @@
 .regulation-card .card-content {
     overflow-y: auto;
     flex-grow: 1;
+}
+
+/* Contenedor de la norma - ajustar para ocupar más espacio vertical */
+.norma-container {
+    position: relative;
+    margin-top: 55px; /* Eliminar el margen superior */
+    width: 100%;
+    border-radius: 8px;
+    height: 100%; /* Ocupar toda la altura disponible */
+    overflow: hidden;
+}
+
+/* Estilo específico para la imagen de normativa */
+.norma-image {  
+    width: 100%;
+    height: 100%; /* Hacer que la imagen ocupe el 100% de la altura */
+    object-fit: cover; /* Mantener proporción cubriendo todo el espacio */
+    object-position: center; /* Centrar la imagen */
+    display: block;
+    border-radius: 0; /* Quitar bordes redondeados */
+    box-shadow: none; /* Quitar sombra */
+}
+
+/* Ajustar el contenedor del mapa para que tenga altura completa */
+.slide-layout:has(.regulation-cards) > .map-container {
+    padding-top: 0;
+    height: 600px; /* Altura fija más grande */
+    display: flex;
+    align-items: stretch;
+}
+
+/* Hacer que el layout general tenga altura suficiente */
+.slide-layout:has(.regulation-cards) {
+    align-items: flex-start;
+    min-height: 700px; /* Asegurar una altura mínima para todo el layout */
+}
+
+/* Ajustar para que el contenido de la izquierda se alinee mejor */
+.slide-layout:has(.regulation-cards) > .content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.slide-layout:has(.regulation-cards) > .content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+/* Ajustes finales para asegurar buena presentación en todas las secciones */
+.slide-layout:has(.regulation-cards) > .content-left,
+.slide-layout:has(.regulation-cards) > .content-right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

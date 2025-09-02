@@ -5,12 +5,12 @@
 }
 
 :root {
-    /* Brand Colors - can be customized */
-    --aecom-earth-green: #008768;
-    --aecom-lime-green: #aecc53;
-    --aecom-midnight-teal: #00353e;
+    /* Actualización de la paleta de colores según la imagen */
+    --aecom-earth-green: #699E1E;
+    --aecom-lime-green: #A5DD43;
+    --aecom-midnight-teal: #58762A;
     --aecom-black: #000000;
-    --aecom-white: #ffffff;
+    --aecom-white: #EFEFEF;
 }
 
 body {
@@ -28,7 +28,9 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, var(--aecom-midnight-teal) 0%, #001f2a 100%);
+    background: url('../assets/Fondo LAM.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +41,12 @@ body {
 .intro-content {
     text-align: center;
     animation: fadeInUp 1s ease;
+    background-color: rgba(0, 0, 0, 0); /* Sin fondo */
+    padding: 30px;
+    border-radius: 10px;
+    position: relative; /* Añadir posición relativa para que el botón absoluto funcione correctamente */
+    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho disponible */
+    height: 100%; /* Asegurar que el contenedor ocupe todo el alto disponible */
 }
 .intro-logos {
     display: flex;
@@ -84,6 +92,12 @@ body {
 }
 
 .intro-button {
+    /* Cambiar a posición absoluta para colocarlo exactamente donde necesitamos */
+    position: absolute;
+    top: 590px; /* Ajusta este valor para subir o bajar el botón */
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    
     background: var(--aecom-lime-green);
     color: var(--aecom-midnight-teal);
     border: none;
@@ -96,17 +110,31 @@ body {
     align-items: center;
     gap: 10px;
     transition: all 0.3s ease;
+    z-index: 10; /* Asegurar que el botón esté por encima de otros elementos */
 }
 
+/* Ajustar el contenedor para que permita el posicionamiento absoluto */
+.intro-content {
+    text-align: center;
+    animation: fadeInUp 1s ease;
+    background-color: rgba(0, 0, 0, 0); /* Sin fondo */
+    padding: 30px;
+    border-radius: 10px;
+    position: relative; /* Añadir posición relativa para que el botón absoluto funcione correctamente */
+    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho disponible */
+    height: 100%; /* Asegurar que el contenedor ocupe todo el alto disponible */
+}
+
+/* Ajustar el hover del botón para mantener coherencia */
 .intro-button:hover {
-    transform: translateY(-2px);
+    transform: translateX(-50%) translateY(-2px); /* Mantener centrado horizontal al hacer hover */
     box-shadow: 0 10px 30px rgba(174, 204, 83, 0.3);
 }
 
 /* Home button */
 .home-button {
     position: fixed;
-    top: 20px;
+    top: 100px;
     right: 20px;
     background: var(--aecom-lime-green);
     color: var(--aecom-midnight-teal);
@@ -380,29 +408,28 @@ body {
 .content-section h2 {
     font-size: 36px;
     color: var(--aecom-midnight-teal);
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .content-section h3 {
     font-size: 24px;
     color: var(--aecom-earth-green);
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .content-section p {
     font-size: 18px;
     line-height: 1.6;
     color: #666;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .feature-list {
     list-style: none;
-    margin: 20px 0;
+    margin:0;
 }
 
 .feature-list li {
-    padding: 10px 0;
     padding-left: 30px;
     position: relative;
     font-size: 16px;
@@ -426,7 +453,7 @@ body {
 .feature-list-icons li {
     display: flex;
     align-items: center;
-    margin-bottom: 15px; /* Reducir de 20px a 15px */
+    margin-bottom: 0; /* Reducir de 20px a 15px */
     padding-left: 0;
 }
 
@@ -477,7 +504,7 @@ body {
 
 /* Common action button styles */
 .action-btn {
-    background: linear-gradient(135deg, var(--aecom-earth-green) 0%, #006d56 100%);
+    background: linear-gradient(135deg, var(--aecom-earth-green) 0%, var(--aecom-midnight-teal) 100%);
     color: white;
     border: none;
     padding: 12px 25px;
@@ -498,7 +525,7 @@ body {
 .action-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 135, 104, 0.4);
-    background: linear-gradient(135deg, #006d56 0%, var(--aecom-earth-green) 100%);
+    background: linear-gradient(135deg, var(--aecom-midnight-teal) 0%, var(--aecom-earth-green) 100%);
 }
 
 .action-btn i {
@@ -507,13 +534,13 @@ body {
 
 /* Specific button styles */
 .workflow-btn {
-    background: linear-gradient(135deg, var(--aecom-lime-green) 0%, #9eb944 100%);
+    background: linear-gradient(135deg, var(--aecom-lime-green) 0%, var(--aecom-earth-green) 100%);
     color: var(--aecom-midnight-teal);
     box-shadow: 0 4px 15px rgba(174, 204, 83, 0.3);
 }
 
 .workflow-btn:hover {
-    background: linear-gradient(135deg, #9eb944 0%, var(--aecom-lime-green) 100%);
+    background: linear-gradient(135deg, var(--aecom-earth-green) 0%, var(--aecom-lime-green) 100%);
     box-shadow: 0 6px 20px rgba(174, 204, 83, 0.4);
 }
 
