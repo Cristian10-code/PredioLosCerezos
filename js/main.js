@@ -56,6 +56,19 @@ const slideContents = {
                     </ul>
                 </div>
             </div>
+            
+            <!-- Sección de documentos con botones debajo de la imagen -->
+            <div class="documents-section">
+                <h3>Documentos</h3>
+                <div class="document-buttons">
+                    <a href="assets/Cerificado de Libertad - Predio Los Cerezos.pdf" download class="doc-button">
+                        <i class="fas fa-file-pdf"></i> Certificado de Libertad
+                    </a>
+                    <a href="assets/Impuestos - Predio Los Cerezos.pdf" download class="doc-button">
+                        <i class="fas fa-file-invoice-dollar"></i> Impuestos
+                    </a>
+                </div>
+            </div>
         `
     },
     'normativa': {
@@ -383,7 +396,6 @@ const slideContents = {
                 <div class="prefactibilidad-container">
                     <!-- Panel de escenarios (izquierda) -->
                     <div class="prefactibilidad-sidebar">
-                        <p>Seleccione un escenario:</p>
                         <div class="prefactibilidad-buttons">
                             <!-- Botones circulares -->
                             <button id="btn-scenario1" class="scenario-btn">
@@ -408,7 +420,7 @@ const slideContents = {
                             <table class="prefactibilidad-table">
                                 <tr>
                                     <th>Concepto</th>
-                                    <th>Valor</th>
+                                    <th>Valor</th> 
                                     <th>%</th>
                                 </tr>
                                 <tr>
@@ -580,10 +592,10 @@ const slideContents = {
                     </ul>
                 </div>
                 
-                // <div class="contact-info">
-                //     <p><strong>LAM Consultoría Inmobiliaria</strong></p>
-                //     <p>lmilenaarq@gmail.com | Tel: (57) 313 3918422</p>
-                // </div>
+                <div class="contact-info">
+                    <p><strong>LAM Consultoría Inmobiliaria</strong></p>
+                    <p>lmilenaarq@gmail.com | Tel: (57) 313 3918422</p>
+                </div>
                 
                 <div class="disclaimer"> 
                     <p><em>La información técnica, financiera y comercial presentada ha sido preparada por LAM, su grupo de 

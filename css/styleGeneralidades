@@ -1,0 +1,102 @@
+/* Estilo para el botón de descarga de certificado */
+.download-certificate {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--aecom-lime-green);
+}
+
+.download-certificate h3 {
+    color: var(--aecom-midnight-teal);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.download-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(245, 245, 245, 0.8);
+    border-radius: 8px;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    justify-content: center;
+}
+
+.download-btn:hover {
+    background-color: #3e8e41;
+}
+
+.download-btn i {
+    margin-right: 8px;
+}
+
+/* Add or update in your CSS file */
+.documents-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.documents-section h3 {
+    font-size: 24px;
+    color: #4a7729;
+    margin-bottom: 15px;
+}
+
+.document-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.doc-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background-color: #8CC63F;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px; /* Rounded corners like the image */
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 220px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+}
+
+.doc-button:hover {
+    background-color: #7ab62f;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.doc-button i {
+    margin-right: 10px;
+    font-size: 18px;
+}
