@@ -16,7 +16,7 @@
 }
 
 .download-section {
-    margin-top: 20px;
+    margin-top: 20px;   
     padding: 15px;
     background-color: rgba(245, 245, 245, 0.8);
     border-radius: 8px;

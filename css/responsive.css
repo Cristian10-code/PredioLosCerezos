@@ -1,0 +1,126 @@
+/* Responsive layout adjustments that preserve existing design */
+
+/* Large screens adjustments */
+@media screen and (max-width: 1200px) {
+    /* Adjust layout flow while preserving all styling */
+    .slide-layout {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .map-container, .content-section {
+        width: 100%;
+    }
+    
+    .timeline-sidebar {
+        width: 350px;
+    }
+    
+    .preview-area {
+        left: 350px;
+    }
+}
+
+/* Medium screens */
+@media screen and (max-width: 992px) {
+    /* Normativa - adjust card grid */
+    .regulation-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timeline-sidebar {
+        width: 300px;
+    }
+    
+    .preview-area {
+        left: 300px;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 768px) {
+    /* Edificabilidad - adjust layout */
+    .edificabilidad-slide .flex-content-row {
+        flex-direction: column;
+    }
+    
+    .edificabilidad-slide .left-column, 
+    .edificabilidad-slide .right-column {
+        width: 100%;
+    }
+    
+    /* Table containers should scroll horizontally */
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    /* Normativa - single column on very small screens */
+    .regulation-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-sidebar {
+        width: 250px;
+    }
+    
+    .preview-area {
+        left: 250px;
+        padding: 20px;
+    }
+    
+    .intro-button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
+
+/* Very small screens */
+@media screen and (max-width: 576px) {
+    /* Keep document buttons in a vertical stack */
+    .document-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Ensure buttons keep their styling but stack nicely */
+    .doc-button {
+        margin: 5px auto;
+    }
+    
+    .timeline-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .preview-area {
+        left: 0;
+        top: auto;
+        position: relative;
+    }
+    
+    .main-content {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .regulation-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .home-button {
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* Fix for zoom issues */
+@media (max-width: 1400px) and (min-width: 992px) {
+    .intro-content {
+        padding: 20px;
+    }
+    
+    .intro-button {
+        margin-top: 15vh;
+    }
+}

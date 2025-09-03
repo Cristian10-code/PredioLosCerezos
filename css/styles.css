@@ -39,15 +39,23 @@ body {
 }
 
 .intro-content {
+    position: relative;
+    top: 70px;
     text-align: center;
     animation: fadeInUp 1s ease;
     background-color: rgba(0, 0, 0, 0); /* Sin fondo */
     padding: 30px;
     border-radius: 10px;
-    position: relative; /* Añadir posición relativa para que el botón absoluto funcione correctamente */
-    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho disponible */
-    height: 100%; /* Asegurar que el contenedor ocupe todo el alto disponible */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* Display as flex to properly center content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .intro-logos {
     display: flex;
     flex-direction: column;    
@@ -92,11 +100,9 @@ body {
 }
 
 .intro-button {
-    /* Cambiar a posición absoluta para colocarlo exactamente donde necesitamos */
-    position: absolute;
-    top: 590px; /* Ajusta este valor para subir o bajar el botón */
-    left: 50%;
-    transform: translateX(-50%); /* Centrar horizontalmente */
+    /* Change from absolute to relative positioning */
+    position: relative;
+    margin-top: 20vh; /* Use viewport height instead of fixed pixels */
     
     background: var(--aecom-lime-green);
     color: var(--aecom-midnight-teal);
@@ -113,21 +119,9 @@ body {
     z-index: 10; /* Asegurar que el botón esté por encima de otros elementos */
 }
 
-/* Ajustar el contenedor para que permita el posicionamiento absoluto */
-.intro-content {
-    text-align: center;
-    animation: fadeInUp 1s ease;
-    background-color: rgba(0, 0, 0, 0); /* Sin fondo */
-    padding: 30px;
-    border-radius: 10px;
-    position: relative; /* Añadir posición relativa para que el botón absoluto funcione correctamente */
-    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho disponible */
-    height: 100%; /* Asegurar que el contenedor ocupe todo el alto disponible */
-}
-
 /* Ajustar el hover del botón para mantener coherencia */
 .intro-button:hover {
-    transform: translateX(-50%) translateY(-2px); /* Mantener centrado horizontal al hacer hover */
+    transform: translateY(-2px); /* Remove the translateX(-50%) that caused issues */
     box-shadow: 0 10px 30px rgba(174, 204, 83, 0.3);
 }
 

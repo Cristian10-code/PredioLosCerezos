@@ -429,7 +429,7 @@ const slideContents = {
                                     <td class="column-percent">100%</td>
                                 </tr>
                                 <tr>
-                                    <td>COSTO DIRECTOS</td>
+                                    <td>COSTOS DIRECTOS</td>
                                     <td class="column-value">$ 902.186.678</td>
                                     <td class="column-percent">46%</td>
                                 </tr>
@@ -480,7 +480,7 @@ const slideContents = {
                                     <td class="column-percent">100%</td>
                                 </tr>
                                 <tr>
-                                    <td>COSTO DIRECTOS</td>
+                                    <td>COSTOS DIRECTOS</td>
                                     <td class="column-value">$ 574.118.795</td>
                                     <td class="column-percent">46%</td>
                                 </tr>
@@ -531,7 +531,7 @@ const slideContents = {
                                     <td class="column-percent">100%</td>
                                 </tr>
                                 <tr>
-                                    <td>COSTO DIRECTOS</td>
+                                    <td>COSTOS DIRECTOS</td>
                                     <td class="column-value">$ 210.299.925</td>
                                     <td class="column-percent">46%</td>
                                 </tr>
@@ -581,13 +581,13 @@ const slideContents = {
                 
                 <div class="negotiation-terms">
                     <ul class="feature-list">
-                        <li>
+                        <li> 
                             <strong>Modelo de negocio:</strong> Predio en Aporte, se escuchan ofertas y modelos de negocio. 
                             El propietario está dispuesto a participar en el proyecto, con un pago inicial mínimo del 5% 
                             para gastos de comisión.
                         </li>
                         <li>
-                            <strong>Valor mínimo garantizado:</strong> $223.690/m²
+                            <strong>Valor mínimo garantizado:</strong> $180.000/m²
                         </li>
                     </ul>
                 </div>
