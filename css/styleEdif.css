@@ -281,3 +281,45 @@
 .show-panel {
     display: block;
 }
+
+/* Add these responsive styles at the end of the file */
+@media screen and (max-width: 768px) {
+    .right-column {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        padding: 10px !important;
+        justify-content: center !important;
+    }
+    
+    .data-table {
+        font-size: 14px;
+    }
+    
+    .data-table th, .data-table td {
+        padding: 8px 6px;
+    }
+    
+    .table-container {
+        margin: 10px 0;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .data-table {
+        font-size: 12px;
+    }
+    
+    .data-table th, .data-table td {
+        padding: 6px 4px;
+    }
+    
+    .top-title h2 {
+        font-size: 28px;
+    }
+    
+    .top-title h3 {
+        font-size: 18px;
+    }
+}

@@ -7,14 +7,15 @@
     height: 60vh !important; /* Reduced height */
     min-height: 400px;
     max-height: 90vh; /* Kept at 90vh as requested */
-    overflow: hidden; /* Prevent content from spilling outside */
+    overflow: visible; /* Cambiado de 'hidden' a 'visible' para permitir scroll */
 }
 
 /* Mantiene la proporción de la imagen del mapa */
 .slide-layout.mercado-slide img {
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important; /* Cambiado a auto para mantener proporción */
     object-fit: cover !important;
+    max-height: 100%;
 }
 
 /* Location markers container */
@@ -95,7 +96,7 @@
 }
 
 .panel-header {
-    background-color: var(--aecom-midnight-teal); /* Actualizado a #58762A */
+    background-color: var(--aecom-midnight-teal);
     padding: 12px 15px;
     color: white;
     display: flex;
@@ -106,7 +107,7 @@
 .panel-header h4 {
     margin: 0;
     font-size: 18px;
-    color: var(--aecom-white); /* Actualizado a #EFEFEF */
+    color: var(--aecom-white);
 }
 
 .close-panel {
@@ -141,4 +142,54 @@
 
 .show-panel {
     display: block;
+}
+
+/* Correcciones específicas para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .slide-layout.mercado-slide {
+        height: auto !important;
+        min-height: 300px;
+        max-height: none !important;
+        overflow-y: visible;
+    }
+    
+    /* Ajustar contenedor de paneles para pantallas pequeñas */
+    .project-panels {
+        position: relative;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    /* Ajustar paneles para pantallas pequeñas */
+    .project-panel {
+        position: fixed; /* Cambiado a fixed para evitar problemas con scroll */
+        max-width: 90%;
+        width: 300px;
+    }
+    
+    /* Asegurar que el botón de cerrar sea accesible */
+    .close-panel {
+        padding: 5px;
+        font-size: 24px;
+    }
+    
+    /* Agregar espacio después del contenedor del mapa para los paneles */
+    .slide-content .mercado-slide {
+        margin-bottom: 60px;
+    }
+    
+    /* Corregir el div del cierre del main-content */
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* Corregir bug de posición de cierre HTML */
+@media screen and (min-width: 769px) {
+    .main-content {
+        height: 100vh;
+        overflow: hidden;
+    }
 }

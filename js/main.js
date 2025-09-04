@@ -64,9 +64,6 @@ const slideContents = {
                     <a href="assets/Cerificado de Libertad - Predio Los Cerezos.pdf" download class="doc-button">
                         <i class="fas fa-file-pdf"></i> Certificado de Libertad
                     </a>
-                    <a href="assets/Impuestos - Predio Los Cerezos.pdf" download class="doc-button">
-                        <i class="fas fa-file-invoice-dollar"></i> Impuestos
-                    </a>
                 </div>
             </div>
         `
@@ -152,7 +149,7 @@ const slideContents = {
             </div>
         `
     },
-    'edificabilidad': {
+'edificabilidad': {
         html: `
             <div class="slide-layout edificabilidad-slide" style="background-image: url('assets/Edificabilidad Espejo.jpg');">
                 <!-- Capa semi-transparente -->
@@ -171,7 +168,7 @@ const slideContents = {
                                         
                     </div> 
                     
-                    <!-- Columna derecha con tabla -->
+                    <!-- Columna derecha con tabla - Modificada para mejor responsividad -->
                     <div class="right-column">
                         <div class="table-container">
                             <table class="data-table edificabilidad-table">
