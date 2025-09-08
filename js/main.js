@@ -61,7 +61,7 @@ const slideContents = {
             <div class="documents-section">
                 <h3>Documentos</h3>
                 <div class="document-buttons">
-                    <a href="assets/Cerificado de Libertad - Predio Los Cerezos.pdf" download class="doc-button">
+                    <a href="assets/Cerificado de Libertad - Predio Los Cerezos - Septiembre.pdf" download class="doc-button">
                         <i class="fas fa-file-pdf"></i> Certificado de Libertad
                     </a>
                 </div>
@@ -152,6 +152,7 @@ const slideContents = {
 'edificabilidad': {
         html: `
             <div class="slide-layout edificabilidad-slide" style="background-image: url('assets/Edificabilidad Espejo.jpg');">
+                <p style="color: white; right: 20px; position: absolute; bottom: 20px;">Imagen tomada de proyecto Aria Serna Sarabia</p> 
                 <!-- Capa semi-transparente -->
                 <div class="overlay-translucent"></div>
                 
@@ -591,7 +592,7 @@ const slideContents = {
                 
                 <div class="contact-info">
                     <p><strong>LAM Consultoría Inmobiliaria</strong></p>
-                    <p>lmilenaarq@gmail.com | Tel: (57) 313 3918422</p>
+                    <p>lmilenaarq@gmail.com - alfredo@inmobiliariayconstructoratitan.com | Tel: (57) 314 4903759- (57) 313 3918422</p>
                 </div>
                 
                 <div class="disclaimer"> 
