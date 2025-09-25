@@ -583,16 +583,13 @@ const slideContents = {
                             <strong>Modelo de negocio:</strong> Predio en Aporte, se escuchan ofertas y modelos de negocio. 
                             El propietario está dispuesto a participar en el proyecto, con un pago inicial mínimo del 5% 
                             para gastos de comisión.
-                        </li>
-                        <li>
-                            <strong>Valor mínimo garantizado:</strong> $180.000/m²
-                        </li>
+
                     </ul>
                 </div>
                 
                 <div class="contact-info">
                     <p><strong>LAM Consultoría Inmobiliaria</strong></p>
-                    <p>lmilenaarq@gmail.com - alfredo@inmobiliariayconstructoratitan.com | Tel: (57) 314 4903759- (57) 313 3918422</p>
+                    <p>lmilenaarq@gmail.com - alfredo@inmobiliariayconstructoratitan.com <br> Tel: (57) 314 4903759- (57) 313 3918422</p>
                 </div>
                 
                 <div class="disclaimer"> 
